@@ -1,5 +1,15 @@
 1. Download and install R and RStudio with Elevated Rights
 
+Note: R is the programming language platform. RStudio is the GUI that sits on top of R.
+
+***
+
+Note 2: git is a protocol that is native to Macs and Linux systems. It is used for collaboration and version control.
+
+github is an online service that supports the git protocol and offers free / paid member subscriptions to manage your repositories (or repos, in short).
+
+For Windows machines, it is slightly more difficult to setup git, but once you do so, most of the workflows will remain the same across different OS platforms.
+
 2. Setup your github account and create a handshake between your laptop and github.com
 
 For Windows
@@ -11,3 +21,38 @@ git bash - command line tool (for Windows)
 https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+***
+
+3. Using git / github for our project
+
+Step 1: Using git bash or the Mac / Linux command line, navigate to a convenient folder that you plan to use as a workspace.
+
+Step 2: Run the command
+
+> git clone https://github.com/nvenkataraman1/cyclingkaggle.git
+
+Step 3: Navigate to the cyclingkaggle folder
+
+> cd cyclingkaggle
+
+Step 4: Work under your own branch. This is to ensure the sanctity of the master branch which should only have the final version of all data / code.
+
+> git checkout your_name (enter your name as created on the branch)
+
+Step 5: Do your work. Modify any files / data and ensure you are using appropriate names for all code / data files.
+
+Step 6: Setup files to be tracked for commit
+
+> git add xyz.ext (where xyz is the names of the files you've modified and .ext is the file extension. Example: git add data_processing.R)
+
++ Do the git add for each file you've changed
+
+Step 7: Commit your files
+
+> git commit -m "a descriptive commit message"
+
+Step 8: Push your changes to github
+
+> git push
+
