@@ -40,6 +40,10 @@ Step 4: Work under your own branch. This is to ensure the sanctity of the master
 
 > git checkout your_name (enter your name as created on the branch)
 
+Step 4b: Merge the files with master in your local environment so that you have the latest changes
+
+> git merge master
+
 Step 5: Do your work. Modify any files / data and ensure you are using appropriate names for all code / data files.
 
 Step 6: Setup files to be tracked for commit
