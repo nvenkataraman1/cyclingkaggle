@@ -1,3 +1,6 @@
+library(lubridate)
+library(xts)
+
 train <- read.csv("../challenge_31_data/data_train.csv", 
                   stringsAsFactors = F, 
                   sep = ";")
@@ -10,11 +13,12 @@ head(train)
 
 str(train)
 
-library(lubridate)
-
 date.time <- ymd_hms(paste(train$Date,train$Time))
 
 head(date.time)
 
 train$date.time <- date.time
 
+head(train)
+
+#train.xts <- xts(train)
