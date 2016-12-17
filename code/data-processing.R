@@ -21,4 +21,6 @@ train$date.time <- date.time
 
 head(train)
 
+str(train)
+
 #train.xts <- xts(train)
